@@ -3,154 +3,62 @@
 <head>
 	<meta charset="utf-8">
 	<title>Lee Chang-Hee's Page!!</title>
+	<link href="stylesheets/myhome.css" rel="stylesheet" type="text/css">
+
 	<style type="text/css">
-	body {
-		width: 1024;
-		margin: 0;
-		padding: 0;
-		background-color: #cc66cc;
-		overflow: hidden;
-	}
-	#top {
-		background-color: #000;
-		width: 100%;
-		height: 80px;
-	}
-	#header {
-		width: 1024px;
-		height: 80px;
-		background-color: #000;
-		margin: 0;
-		padding: 0;
-		color: #cc66cc;
-		left: 50%;
-		position: absolute;
-		margin-left: -512px;
-		top: 0;
-	}
-	#content {
-		background-color: #cc66cc;
-		color: #000;
-		padding: 0;
-		padding-top: 10px;
-		margin: 0;
-		width: 1024px;
-		height: 400px;
-		left: 50%;
-		position: absolute;
-		margin-left: -512px;
-		float: left;
-		text-align: center;
-		font-family: 'NanumBrushWeb';
-		font-size: 30px;
-		font-weight: bold;
-	}
-	#sendmail {
-		padding-left: 100px;
-		margin-top: 0px;
-		text-align: left;
-		width: 412px;
-		height: 400px;
-		background-color: #330033;
-		color: #FFF;
-		float: left; 
-		line-height: 70%;
-	} 
-	#sendmail dd {
-		margin: 0;
-	}
-	#sendmail dt {
-		margin-top: 20px;
-	}
-	#email, #name, #message {
-		width: 300px;
-	}
-	#menu {
-		line-height: 70px;
-		margin: 0;
-		padding: 0;
-		font-family: 'Audiowide', 'impact';
-		text-align: right;
-	}
-	#menu li {
-		margin: 0;
-		padding: 0;
-		display: inline;
-		list-style-type: none;
-	}
-	#menu a {
-		margin-right: 20px;
-		text-decoration: none;
-		font-size: 20px;
-		color: #b7b7b7;
-	}
-	#menu a:hover {
-		border-bottom: 4px solid;
-		padding-bottom: 10px;
-		color: #b7b7b7;
-	}
-	#title {
-		float: left;
-		line-height: 75px;
-		margin: 0;
-		padding-left: 20px;
-		font-family: 'Audiowide', 'impact';
-		font-size: 40px;
-		font-weight: Bold;
-	}
-	#foot {
-		width: 100%;
-		height: 50px;
-		background-color: #000;
-		margin-top: 420px;
-		padding: 0;
-		color: #999999;
-		padding-top: 30px;
-		text-align: center;
-	}
-	}
+		#logo { color: #cc66cc;}
+		#content5 { background-color: #cc66cc; }
 	</style>
+	<!-- Web font link  -->
 	<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
-	<link href='http://api.mobilis.co.kr/webfonts/css/?fontface=NanumBrushWeb' rel='stylesheet' type='text/css' />
+	<link href='http://api.mobilis.co.kr/webfonts/css/?fontface=NanumBrushWeb' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="top">
+	<div id="wrap">
 		<div id="header">
-			<span id="title"> Lee Chang-Hee </span>
-			<ul id="menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="index2.html">Profile</a></li>
-				<li><a href="index3.html">Study</a></li>
-				<li><a href="index4.html">Favorite</a></li>
-				<li><a href="index5.html">Contact</a></li>
-			</ul>
+			<div id="head">
+				<div id="logo">Lee Chang-Hee</div>
+				<div id="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index2.html">Profile</a></li>
+						<li><a href="index3.html">Study</a></li>
+						<li><a href="index4.html">Favorite</a></li>
+						<li><a href="index5.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div id="content">
-		<div style="line-height: 200%; width: 512px; height: 380px; float: left; padding-top: 20px;">
-			<img src="images/logo1.png" width="180" height="60" alt="페이스북 바로가기"><br>
-			<img src="images/logo2.png" width="180" height="60" alt="싸이월드 바로가기"><br>
-			<img src="images/logo3.png" width="180" height="60" alt="카카오톡 아이디 복사하기"><br>
-			<img src="images/logo4.png" width="180" height="60" alt="네이트온 아이디 복사하기"><br>
-			친구 등록 Go!! 메시지를 보내요!!
+		<div id="content5">
+			<div id="main">
+				<div id="content5_1">
+					<img src="images/logo1.png" width="180" height="60" alt="페이스북 바로가기"><br>
+					<img src="images/logo2.png" width="180" height="60" alt="싸이월드 바로가기"><br>
+					<img src="images/logo3.png" width="180" height="60" alt="카카오톡 아이디 복사하기"><br>
+					<img src="images/logo4.png" width="180" height="60" alt="네이트온 아이디 복사하기"><br>
+					친구 등록 Go!! 메시지를 보내요!!
+				</div>
+				<div id="content5_2">
+					<form>
+						<dl>
+							<dt>Your Name</dt>
+							<dd><input type="text" id="name" name="name"></dd>
+							<dt>E-mail Address</dt>
+							<dd><input type="text" id="email" name="email"></dd>
+							<dt>Message</dt>
+							<dd><textarea rows="9" id="message" name="message"></textarea></dd>
+							<dt></dt>
+							<input type="submit" value="전송" id="button">
+						</dl>
+					</form>
+				</div>
+			</div>
 		</div>
-		<div id="sendmail">
-			<form>
-				<dl>
-					<dt>Your Name</dt>
-					<dd><input type="text" id="name" name="name"></dd>
-					<dt>E-mail Address</dt>
-					<dd><input type="text" id="email" name="email"></dd>
-					<dt>Message</dt>
-					<dd><textarea rows="9" id="message" name="message"></textarea></dd>
-					<dt></dt>
-					<dd style="text-align: right; margin-right: 50px;"><input type="submit" value="전송"></dd>
-				</dl>
-			</form>
+		<div id="footer">
+			<div id="foot">
+				Lee Chang-Hee | Myong-ji University Computer Engineering | ctrl0703@naver.com | 2012. 10. 13. | Home Page Version 3
+			</div>
 		</div>
-	</div>
-	<div id="foot">
-			Lee Chang-Hee | Myong-ji University Computer Engineering | ctrl0703@naver.com | 2012. 10. 13. | Home Page Version 2
 	</div>
 </body>
 </html>
